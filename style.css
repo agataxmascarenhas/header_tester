@@ -1,0 +1,75 @@
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+	background-image: url("./assets/anas-alshanti-feXpdV001o4-unsplash.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.popup {
+	background-color: rgb(238, 221, 255);
+	width: auto;
+    padding: 60px 70px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 8px;
+    font-family: "Poppins",sans-serif;
+    display: none;
+    text-align: center;
+
+}
+div {
+	position: relative;
+	transition: 2s ease;
+}
+.popup button {
+    display: block;
+    margin:  0 0 20px auto;
+    background-color: transparent;
+    font-size: 30px;
+    color: #c5c5c5;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.popup p{
+	font-size: 40px;
+	text-align: center;
+	margin: 20px 20px;
+	line-height: 50px;
+	color: white;
+	overflow: hidden;
+	white-space: nowrap;
+	animation: animate 5s 3 steps(30) alternate forwards;
+}
+@keyframes animate {
+	from {
+		width: 0;
+	}
+	to {
+		width: 900px;
+	}
+}
+a {
+    display: block;
+    width: 200px;
+    position: relative;
+    margin: 20px auto;
+    text-align: center;
+    background-color: #6608c5;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 10px;
+	border-radius: 8px;
+	font-size: 20px;
+}
+span {
+	color: #6608c5;
+	font-weight: bold;
+}
